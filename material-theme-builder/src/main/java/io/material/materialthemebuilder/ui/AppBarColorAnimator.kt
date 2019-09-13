@@ -7,6 +7,12 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.animation.ArgbEvaluatorCompat
 import com.google.android.material.tabs.TabLayout
 
+/**
+ * A [ViewPager.OnPageChangeListener] that will adjust the color of the provided [view], and
+ * [window] given the updated position, whose colors are defined by position in
+ * [primaryColorsByPosition].  The provided [tabLayout] will have it's indicator color adjusted
+ * given the updated position, whose colors are defined by position in [accentColorsByPosition].
+ */
 class AppBarColorAnimator(
   @ColorInt private val primaryColorsByPosition: IntArray,
   @ColorInt private val accentColorsByPosition: IntArray,
