@@ -17,6 +17,7 @@
 
 <androidx.core.widget.NestedScrollView
   xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="match_parent" >
 
@@ -77,6 +78,58 @@
               android:layout_gravity="end|center_vertical" />
 
         </FrameLayout>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginTop="16dp"
+        android:text="Activity Theme"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:alpha="?alphaEmphasisMedium" />
+
+      <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/option_default"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:text="Default"/>
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/option_red"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Red"/>
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/option_blue"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Blue"/>
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/option_green"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Green"/>
+
+        <com.google.android.material.chip.Chip
+          android:id="@+id/option_purple"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Purple"/>
+      </com.google.android.material.chip.ChipGroup>
 
     </LinearLayout>
 

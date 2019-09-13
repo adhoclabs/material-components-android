@@ -22,6 +22,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import com.google.android.material.chip.ChipGroup
 import com.google.android.material.switchmaterial.SwitchMaterial
 import io.material.materialthemebuilder.App
 import io.material.materialthemebuilder.R
@@ -50,6 +51,20 @@ class InstructionsFragment : Fragment() {
 
     darkThemeSwitch.setOnCheckedChangeListener { _, checked ->
       preferenceRepository.isDarkTheme = checked
+    }
+
+    view.findViewById<ChipGroup>(R.id.chip_group).setOnCheckedChangeListener { _, checkedId ->
+      requireActivity().apply {
+        setTheme(
+          when (checkedId) {
+            R.id.option_blue -> R.style.BurnerTheme_DayNight_Blue
+            R.id.option_red -> R.style.BurnerTheme_DayNight_Red
+            R.id.option_green -> R.style.BurnerTheme_DayNight_Green
+            R.id.option_purple -> R.style.BurnerTheme_DayNight_Purple
+            else -> R.style.BurnerTheme_DayNight_Default
+          }
+        )
+      }
     }
   }
 }

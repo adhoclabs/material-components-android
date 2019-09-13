@@ -34,10 +34,22 @@
     <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
     <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
     <!--selection controls.-->
-    <color name="color_primary">#6200ee</color>
-    <color name="color_primary_variant">#3700b3</color>
-    <color name="color_secondary">#03dac6</color>
-    <color name="color_secondary_variant">#018786</color>
+    <color name="color_primary">#ff5837</color>
+    <color name="color_primary_variant">#ff5837</color>
+    <color name="color_secondary">#edf1f4</color>
+    <color name="color_secondary_variant">#edf1f4</color>
+
+    <!-- theme variants -->
+    <color name="color_primary_blue">#4960df</color>
+    <color name="color_primary_green">#2b8556</color>
+    <color name="color_primary_red">#d30012</color>
+    <color name="color_primary_purple">#ca239f</color>
+
+    <color name="color_primary_accent">#ffa18f</color>
+    <color name="color_primary_accent_blue">#899dff</color>
+    <color name="color_primary_accent_green">#7ecca1</color>
+    <color name="color_primary_accent_red">#ffa18f</color>
+    <color name="color_primary_accent_purple">#e76ce3</color>
 
     <!--colorBackground appears behind scrollable content and is used for the default window-->
     <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
@@ -45,13 +57,13 @@
     <!--text fields.-->
     <color name="color_background">#ffffff</color>
     <color name="color_surface">#ffffff</color>
-    <color name="color_error">#b00020</color>
+    <color name="color_error">#e52600</color>
 
     <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
     <!--on which they appear.-->
     <color name="color_on_primary">#ffffff</color>
     <color name="color_on_secondary">#000000</color>
-    <color name="color_on_background">#000000</color>
+    <color name="color_on_background">#ffffff</color>
     <color name="color_on_surface">#000000</color>
     <color name="color_on_error">#ffffff</color>
 

@@ -21,18 +21,30 @@
     <!--The same color values are defined for dark theme, but with values more appropriate for -->
     <!--low-luminance UIs. These colors will be used by night/themes.xml.-->
 
-    <color name="color_primary">#bb86fc</color>
-    <color name="color_primary_variant">#4b01d0</color>
-    <color name="color_secondary">#03dac6</color>
-    <color name="color_secondary_variant">#018786</color>
+    <color name="color_primary">#99320f</color>
+    <color name="color_primary_variant">#99320f</color>
+    <color name="color_secondary">#2b3445</color>
+    <color name="color_secondary_variant">#2b3445</color>
 
     <color name="color_background">#000000</color>
     <color name="color_surface">#121212</color>
     <color name="color_error">#cf6679</color>
 
     <color name="color_on_primary">#000000</color>
-    <color name="color_on_secondary">#000000</color>
-    <color name="color_on_background">#ffffff</color>
+    <color name="color_on_secondary">#ffffff</color>
+    <color name="color_on_background">#000000</color>
     <color name="color_on_surface">#ffffff</color>
     <color name="color_on_error">#000000</color>
+
+    <!-- theme variants -->
+    <color name="color_primary_blue">#202f84</color>
+    <color name="color_primary_green">#0b5c32</color>
+    <color name="color_primary_red">#930000</color>
+    <color name="color_primary_purple">#980062</color>
+
+    <color name="color_primary_accent">#ffa18f</color>
+    <color name="color_primary_accent_blue">#3551ef</color>
+    <color name="color_primary_accent_green">#1b9756</color>
+    <color name="color_primary_accent_red">#e52600</color>
+    <color name="color_primary_accent_purple">#bc00b7</color>
 </resources>

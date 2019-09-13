@@ -21,11 +21,14 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.appbar.AppBarLayout
 import io.material.materialthemebuilder.R
 import io.material.materialthemebuilder.App
 import io.material.materialthemebuilder.ui.instruction.InstructionsFragment
 import io.material.materialthemebuilder.ui.themesummary.ThemeSummaryFragment
 import io.material.materialthemebuilder.ui.component.ComponentFragment
+import androidx.core.content.ContextCompat
+
 
 /**
  * Single activity which contains the [MainViewPagerAdapter] that shows the [InstructionsFragment],
@@ -45,6 +48,25 @@ class MainActivity : AppCompatActivity() {
     tabLayout.setupWithViewPager(viewPager)
     val adapter = MainViewPagerAdapter(this, supportFragmentManager)
     viewPager.adapter = adapter
+
+    val primaryColors = intArrayOf(
+      ContextCompat.getColor(this, R.color.color_primary),
+      ContextCompat.getColor(this, R.color.color_primary_blue),
+      ContextCompat.getColor(this, R.color.color_primary_green))
+
+    val accentColors = intArrayOf(
+      ContextCompat.getColor(this, R.color.color_primary_accent),
+      ContextCompat.getColor(this, R.color.color_primary_accent_blue),
+      ContextCompat.getColor(this, R.color.color_primary_accent_green))
+
+    viewPager.addOnPageChangeListener(
+      AppBarColorAnimator(
+        primaryColors,
+        accentColors,
+        findViewById<AppBarLayout>(R.id.app_bar),
+        tabLayout,
+        window)
+    )
 
     (application as App).preferenceRepository
       .nightModeLive.observe(this, Observer { nightMode ->
