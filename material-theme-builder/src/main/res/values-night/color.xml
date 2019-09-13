@@ -22,7 +22,7 @@
     <!--low-luminance UIs. These colors will be used by night/themes.xml.-->
 
     <color name="color_primary">#99320f</color>
-    <color name="color_primary_variant">#99320f</color>
+    <color name="color_primary_variant">#66524e</color>
     <color name="color_secondary">#2b3445</color>
     <color name="color_secondary_variant">#2b3445</color>
 

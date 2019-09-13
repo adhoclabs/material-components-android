@@ -35,7 +35,7 @@
     <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
     <!--selection controls.-->
     <color name="color_primary">#ff5837</color>
-    <color name="color_primary_variant">#ff5837</color>
+    <color name="color_primary_variant">#ffcdc3</color>
     <color name="color_secondary">#edf1f4</color>
     <color name="color_secondary_variant">#edf1f4</color>
 
